@@ -174,11 +174,11 @@ Thank you to [Green API](https://green-api.com) for providing a reliable, free-t
     <tr>
       <td align="center">
         <img src="https://raw.githubusercontent.com/ANUBHAV-03042004/doot-gmails-to-whatsapp/main/badges/firstBuild.gif" alt="First Build" width="160"/><br/>
-        <b>First Build</b>
+        <b>First Build - I had published my first flow and automation is officially real.</b>
       </td>
       <td align="center">
         <img src="https://raw.githubusercontent.com/ANUBHAV-03042004/doot-gmails-to-whatsapp/main/badges/codingChad.gif" alt="Coding Chad" width="160"/><br/>
-        <b>Coding Chad</b>
+        <b>Coding Chad - I used custom code and made my flow do tricks no one else can.</b>
       </td>
     </tr>
   </table>
