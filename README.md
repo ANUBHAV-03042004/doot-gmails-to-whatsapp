@@ -168,11 +168,22 @@ Thank you to [Green API](https://green-api.com) for providing a reliable, free-t
 
 ## 🏅 Badges Earned
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ANUBHAV-03042004/doot-gmails-to-whatsapp/main/badges/firstBuild.gif" alt="First Build" width="160"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/ANUBHAV-03042004/doot-gmails-to-whatsapp/main/badges/codingChad.gif" alt="Coding Chad" width="160"/>
-</p>
+<div align="center">
+
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/ANUBHAV-03042004/doot-gmails-to-whatsapp/main/badges/firstBuild.gif" alt="First Build" width="160"/><br/>
+        <b>First Build</b>
+      </td>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/ANUBHAV-03042004/doot-gmails-to-whatsapp/main/badges/codingChad.gif" alt="Coding Chad" width="160"/><br/>
+        <b>Coding Chad</b>
+      </td>
+    </tr>
+  </table>
+
+</div>
 
 ---
 
