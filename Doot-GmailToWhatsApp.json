@@ -1,0 +1,444 @@
+﻿{
+  "name": "Doot-GmailToWhatsApp",
+  "type": "SHARED",
+  "summary": "",
+  "description": "",
+  "tags": [],
+  "blogUrl": "",
+  "metadata": {
+    "externalId": "ehaFPiFXLw5zZ60EXa0lj"
+  },
+  "author": "Anubhav Kumar Srivastava",
+  "categories": [],
+  "pieces": [
+    "@activepieces/piece-schedule",
+    "@activepieces/piece-store",
+    "@activepieces/piece-gmail"
+  ],
+  "flows": [
+    {
+      "displayName": "Doot-GmailToWhatsApp",
+      "trigger": {
+        "name": "trigger",
+        "valid": true,
+        "displayName": "Every X Minutes",
+        "nextAction": {
+          "name": "step_5",
+          "skip": false,
+          "type": "PIECE",
+          "valid": true,
+          "settings": {
+            "input": {
+              "key": "sent_ids",
+              "store_scope": "COLLECTION",
+              "defaultValue": "0"
+            },
+            "pieceName": "@activepieces/piece-store",
+            "actionName": "get",
+            "sampleData": {},
+            "pieceVersion": "0.6.14",
+            "propertySettings": {
+              "key": {
+                "type": "MANUAL"
+              },
+              "store_scope": {
+                "type": "MANUAL"
+              },
+              "defaultValue": {
+                "type": "MANUAL"
+              }
+            },
+            "errorHandlingOptions": {
+              "retryOnFailure": {
+                "value": false
+              },
+              "continueOnFailure": {
+                "value": false
+              }
+            }
+          },
+          "nextAction": {
+            "name": "step_1",
+            "skip": false,
+            "type": "PIECE",
+            "valid": true,
+            "settings": {
+              "input": {
+                "auth": "{{connections['CONNECTION1']}}",
+                "label": {
+                  "id": "UNREAD",
+                  "name": "UNREAD",
+                  "type": "system"
+                },
+                "category": "primary",
+                "max_results": "5",
+                "has_attachment": false,
+                "include_spam_trash": false
+              },
+              "pieceName": "@activepieces/piece-gmail",
+              "actionName": "gmail_search_mail",
+              "sampleData": {},
+              "pieceVersion": "0.11.6",
+              "propertySettings": {
+                "to": {
+                  "type": "MANUAL"
+                },
+                "from": {
+                  "type": "MANUAL"
+                },
+                "label": {
+                  "type": "MANUAL"
+                },
+                "content": {
+                  "type": "MANUAL"
+                },
+                "subject": {
+                  "type": "MANUAL"
+                },
+                "category": {
+                  "type": "MANUAL"
+                },
+                "after_date": {
+                  "type": "MANUAL"
+                },
+                "before_date": {
+                  "type": "MANUAL"
+                },
+                "max_results": {
+                  "type": "MANUAL"
+                },
+                "has_attachment": {
+                  "type": "MANUAL"
+                },
+                "attachment_name": {
+                  "type": "MANUAL"
+                },
+                "include_spam_trash": {
+                  "type": "MANUAL"
+                }
+              },
+              "errorHandlingOptions": {
+                "retryOnFailure": {
+                  "value": true
+                },
+                "continueOnFailure": {
+                  "value": false
+                }
+              }
+            },
+            "nextAction": {
+              "name": "step_2",
+              "skip": false,
+              "type": "PIECE",
+              "valid": true,
+              "settings": {
+                "input": {
+                  "auth": "{{connections['CONNECTION2']}}",
+                  "label": {
+                    "id": "UNREAD",
+                    "name": "UNREAD",
+                    "type": "system"
+                  },
+                  "category": "primary",
+                  "max_results": "5",
+                  "has_attachment": false,
+                  "include_spam_trash": false
+                },
+                "pieceName": "@activepieces/piece-gmail",
+                "actionName": "gmail_search_mail",
+                "sampleData": {},
+                "pieceVersion": "0.11.6",
+                "propertySettings": {
+                  "to": {
+                    "type": "MANUAL"
+                  },
+                  "from": {
+                    "type": "MANUAL"
+                  },
+                  "label": {
+                    "type": "MANUAL"
+                  },
+                  "content": {
+                    "type": "MANUAL"
+                  },
+                  "subject": {
+                    "type": "MANUAL"
+                  },
+                  "category": {
+                    "type": "MANUAL"
+                  },
+                  "after_date": {
+                    "type": "MANUAL"
+                  },
+                  "before_date": {
+                    "type": "MANUAL"
+                  },
+                  "max_results": {
+                    "type": "MANUAL"
+                  },
+                  "has_attachment": {
+                    "type": "MANUAL"
+                  },
+                  "attachment_name": {
+                    "type": "MANUAL"
+                  },
+                  "include_spam_trash": {
+                    "type": "MANUAL"
+                  }
+                },
+                "errorHandlingOptions": {
+                  "retryOnFailure": {
+                    "value": true
+                  },
+                  "continueOnFailure": {
+                    "value": false
+                  }
+                }
+              },
+              "nextAction": {
+                "name": "step_7",
+                "skip": false,
+                "type": "PIECE",
+                "valid": true,
+                "settings": {
+                  "input": {
+                    "auth": "{{connections['CONNECTION3']}}",
+                    "label": {
+                      "id": "UNREAD",
+                      "name": "UNREAD",
+                      "type": "system"
+                    },
+                    "category": "primary",
+                    "max_results": "5",
+                    "has_attachment": false,
+                    "include_spam_trash": false
+                  },
+                  "pieceName": "@activepieces/piece-gmail",
+                  "actionName": "gmail_search_mail",
+                  "sampleData": {},
+                  "pieceVersion": "0.11.6",
+                  "propertySettings": {
+                    "to": {
+                      "type": "MANUAL"
+                    },
+                    "from": {
+                      "type": "MANUAL"
+                    },
+                    "label": {
+                      "type": "MANUAL"
+                    },
+                    "content": {
+                      "type": "MANUAL"
+                    },
+                    "subject": {
+                      "type": "MANUAL"
+                    },
+                    "category": {
+                      "type": "MANUAL"
+                    },
+                    "after_date": {
+                      "type": "MANUAL"
+                    },
+                    "before_date": {
+                      "type": "MANUAL"
+                    },
+                    "max_results": {
+                      "type": "MANUAL"
+                    },
+                    "has_attachment": {
+                      "type": "MANUAL"
+                    },
+                    "attachment_name": {
+                      "type": "MANUAL"
+                    },
+                    "include_spam_trash": {
+                      "type": "MANUAL"
+                    }
+                  },
+                  "errorHandlingOptions": {
+                    "retryOnFailure": {
+                      "value": true
+                    },
+                    "continueOnFailure": {
+                      "value": false
+                    }
+                  }
+                },
+                "nextAction": {
+                  "name": "step_8",
+                  "skip": false,
+                  "type": "PIECE",
+                  "valid": true,
+                  "settings": {
+                    "input": {
+                      "auth": "{{connections['CONNECTION4']}}",
+                      "label": {
+                        "id": "UNREAD",
+                        "name": "UNREAD",
+                        "type": "system"
+                      },
+                      "category": "primary",
+                      "max_results": "5",
+                      "has_attachment": false,
+                      "include_spam_trash": false
+                    },
+                    "pieceName": "@activepieces/piece-gmail",
+                    "actionName": "gmail_search_mail",
+                    "sampleData": {},
+                    "pieceVersion": "0.11.6",
+                    "propertySettings": {
+                      "to": {
+                        "type": "MANUAL"
+                      },
+                      "from": {
+                        "type": "MANUAL"
+                      },
+                      "label": {
+                        "type": "MANUAL"
+                      },
+                      "content": {
+                        "type": "MANUAL"
+                      },
+                      "subject": {
+                        "type": "MANUAL"
+                      },
+                      "category": {
+                        "type": "MANUAL"
+                      },
+                      "after_date": {
+                        "type": "MANUAL"
+                      },
+                      "before_date": {
+                        "type": "MANUAL"
+                      },
+                      "max_results": {
+                        "type": "MANUAL"
+                      },
+                      "has_attachment": {
+                        "type": "MANUAL"
+                      },
+                      "attachment_name": {
+                        "type": "MANUAL"
+                      },
+                      "include_spam_trash": {
+                        "type": "MANUAL"
+                      }
+                    },
+                    "errorHandlingOptions": {
+                      "retryOnFailure": {
+                        "value": true
+                      },
+                      "continueOnFailure": {
+                        "value": false
+                      }
+                    }
+                  },
+                  "nextAction": {
+                    "name": "step_4",
+                    "skip": false,
+                    "type": "CODE",
+                    "valid": true,
+                    "settings": {
+                      "input": {
+                        "email1": "{{step_1}}",
+                        "email2": "{{step_2}}",
+                        "email4": "{{step_7}}",
+                        "email5": "{{step_8}}",
+                        "sentIds": "{{step_5}}",
+                        "greenApiToken": "ENTER_YOUR_GREEN_API_TOKEN",
+                        "whatsappChatId": "ENTER_YOUR_GREEN_API_CHAT_ID",
+                        "greenApiInstance": "ENTER_YOUR_GREEN_API_INSTANCE"
+                      },
+                      "sampleData": {},
+                      "sourceCode": {
+                        "code": "export const code = async (inputs) => {\n  const allEmails = [\n    ...(inputs.email1?.results?.messages || []).map(e => ({\n      ...e,\n      account: e.to?.text?.includes('TEXT_BY_WHICH_FORWARDED_MESSAGES_ARE_FOUND') || e.to?.value?.[0]?.address?.includes('TEXT_BY_WHICH_FORWARDED_MESSAGES_ARE_FOUND')\n        ? 'ENTER_EMAIL1_ADDRESS_IN_WHICH_FORWARD_IS_ENABLED'\n        : 'ENTER_THE_EMAIL2_ON_WHICH_YOU_HAVE_FORWARDED_THE_MAIL'\n    })),\n    ...(inputs.email2?.results?.messages || []).map(e => ({ ...e, account: 'ENTER_THE_EMAIL3' })),\n    ...(inputs.email4?.results?.messages || []).map(e => ({ ...e, account: 'ENTER_THE_EMAIL4' })),\n    ...(inputs.email5?.results?.messages || []).map(e => ({ ...e, account: 'ENTER_THE_EMAIL5' }))\n  ];\n\n  let sentIds = [];\n  try {\n    const parsed = JSON.parse(inputs.sentIds || '[]');\n    sentIds = Array.isArray(parsed) ? parsed : [];\n  } catch { sentIds = []; }\n\n  if (allEmails.length === 0) return { sent: 0, newSentIds: JSON.stringify(sentIds) };\n\n  let sentCount = 0;\n\n  for (const email of allEmails) {\n    if (sentIds.includes(String(email.id))) continue;\n\n    const from = email.from?.text || email.from?.value?.[0]?.address || 'Unknown';\n    const subject = email.subject || '(No subject)';\n    const snippet = (email.text || email.textPlain || '').toString();\n    const date = new Date(email.date).toLocaleString('en-IN', {\n      timeZone: 'Asia/Kolkata', day: '2-digit', month: 'short',\n      hour: '2-digit', minute: '2-digit'\n    });\n\n    const otpMatch = (subject + ' ' + snippet).match(/\\b(\\d{4,8})\\b/);\n    const isOtp = otpMatch && /(otp|verify|code|pin|authenticate)/i.test(subject + ' ' + snippet);\n    const otpLine = isOtp ? `\\n🔑 *OTP: ${otpMatch[1]}*` : '';\n    const emoji = isOtp ? '🔐' : '📧';\n\n    const message = `${emoji} *New Email*\\n\\n*Inbox:* ${email.account}\\n*From:* ${from}\\n*Subject:* ${subject}\\n*Time:* ${date}${otpLine}\\n\\n_${snippet.substring(0, 200)}_`;\n\n    const res = await fetch(\n      `https://api.green-api.com/waInstance${inputs.greenApiInstance}/sendMessage/${inputs.greenApiToken}`,\n      {\n        method: 'POST',\n        headers: { 'Content-Type': 'application/json' },\n        body: JSON.stringify({ chatId: inputs.whatsappChatId, message })\n      }\n    );\n\n    if (res.ok) {\n      sentIds.push(String(email.id));\n      sentCount++;\n    }\n  }\n\n  return {\n    sent: sentCount,\n    newSentIds: JSON.stringify(sentIds.slice(-500))\n  };\n};",
+                        "packageJson": "{}"
+                      },
+                      "errorHandlingOptions": {
+                        "retryOnFailure": {
+                          "value": true
+                        },
+                        "continueOnFailure": {
+                          "value": false
+                        }
+                      }
+                    },
+                    "nextAction": {
+                      "name": "step_6",
+                      "skip": false,
+                      "type": "PIECE",
+                      "valid": true,
+                      "settings": {
+                        "input": {
+                          "key": "sent_ids",
+                          "value": "{{step_4['newSentIds']}}",
+                          "store_scope": "COLLECTION"
+                        },
+                        "pieceName": "@activepieces/piece-store",
+                        "actionName": "put",
+                        "sampleData": {},
+                        "pieceVersion": "0.6.14",
+                        "propertySettings": {
+                          "key": {
+                            "type": "MANUAL"
+                          },
+                          "value": {
+                            "type": "MANUAL"
+                          },
+                          "store_scope": {
+                            "type": "MANUAL"
+                          }
+                        },
+                        "errorHandlingOptions": {
+                          "retryOnFailure": {
+                            "value": false
+                          },
+                          "continueOnFailure": {
+                            "value": false
+                          }
+                        }
+                      },
+                      "displayName": "Put",
+                      "lastUpdatedDate": "2026-03-22T06:55:08.576Z"
+                    },
+                    "displayName": "Code",
+                    "lastUpdatedDate": "2026-03-22T06:55:08.575Z"
+                  },
+                  "displayName": "Find Email",
+                  "lastUpdatedDate": "2026-03-22T06:55:08.574Z"
+                },
+                "displayName": "Find Email",
+                "lastUpdatedDate": "2026-03-22T06:55:08.573Z"
+              },
+              "displayName": "Find Email",
+              "lastUpdatedDate": "2026-03-22T06:55:08.573Z"
+            },
+            "displayName": "Find Email",
+            "lastUpdatedDate": "2026-03-22T06:55:08.572Z"
+          },
+          "displayName": "Get",
+          "lastUpdatedDate": "2026-03-22T06:55:08.572Z"
+        },
+        "lastUpdatedDate": "2026-03-22T06:55:08.571Z",
+        "type": "PIECE_TRIGGER",
+        "settings": {
+          "propertySettings": {
+            "minutes": {
+              "type": "MANUAL"
+            }
+          },
+          "pieceName": "@activepieces/piece-schedule",
+          "pieceVersion": "0.1.17",
+          "triggerName": "every_x_minutes",
+          "input": {
+            "minutes": 1
+          }
+        }
+      },
+      "valid": true,
+      "schemaVersion": "18",
+      "notes": []
+    }
+  ],
+  "status": "PUBLISHED"
+}
