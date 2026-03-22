@@ -1,7 +1,8 @@
 # 📬 Doot — Gmail to WhatsApp Messenger
 
+<div align="center">
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXFsbWpkN3JjOG45Z2t0cjRlczQ0ajVzZzN3eXJjcjc5YTl0MGhieSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1oJKxy0ypYpQbK4b5n/giphy.gif" alt="Doot header" width="100%"/>
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmphNjMzYjhxMnM3MmlzMWdrdDNwd2FveWNoenhxa25kb3hmOW03ayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/6EDGSznQA5kVCa0DfD/giphy.gif" alt="Doot header" width="50%"/>
 </p>
 
 > *"Doot" — a messenger that takes messages from one place and delivers them to another.*
@@ -15,6 +16,8 @@
 ![First Build Badge](https://img.shields.io/badge/Badge-First%20Build%20%F0%9F%8F%97%EF%B8%8F-7C3AED?style=for-the-badge)
 ![Coding Chad Badge](https://img.shields.io/badge/Badge-Coding%20Chad%20%F0%9F%92%BB-7C3AED?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+</div>
 
 ---
 
@@ -159,14 +162,24 @@ Thank you to [Green API](https://green-api.com) for providing a reliable, free-t
 
 ---
 
+## 🏅 Badges Earned
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ANUBHAV-03042004/doot-gmails-to-whatsapp/main/badges/firstBuild.gif" alt="First Build" width="160"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/ANUBHAV-03042004/doot-gmails-to-whatsapp/main/badges/codingChad.gif" alt="Coding Chad" width="160"/>
+</p>
+
+---
+
 ## 📄 License
 
 MIT — use it, fork it, build on it.
 
 ---
 
-*Built by Anubhav Kumar Srivastava*
+*Built with ❤️ by Anubhav Kumar Srivastava*
 
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ29pZmZmeWV4YWthdmljbjFtZDBhNWdqanc0bnZmbHljMnlzeDNmZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/6EDGSznQA5kVCa0DfD/giphy.gif" alt="Doot footer" width="100%"/>
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb280a2Z4b3drZDNpam41cTZicTBmcWowNGNmZGd6eWVrN3gxczBzMCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/5nAo0e57d6KYBNGNtK/giphy.gif" alt="Doot footer" width="50%"/>
 </p>
