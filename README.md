@@ -166,6 +166,12 @@ MIT — use it, fork it, build on it.
 
 ---
 
+## 🏅 Badges
+
+![First Build](https://github.com/ANUBHAV-03042004/doot-gmail-to-whatsapp/raw/main/badges/firstBuild.gif)
+
+---
+
 *Built with ❤️ by Anubhav Kumar Srivastava*
 
 <p align="center">
