@@ -44,7 +44,11 @@ It runs entirely on [Activepieces](https://activepieces.com) (open-source automa
 ## 🏗️ Architecture
 
 ![Doot Architecture](./doot-architecture.svg)
+<p align="center">
+  <img src="./diagram.png" alt="Doot Diagram" width="100%"/>
+</p>
 
+  
 ### Flow explained
 
 The flow runs on a 1-minute schedule. It starts by fetching the list of already-delivered email IDs from Activepieces Storage so it can skip emails it has already forwarded. It then polls all 4 Gmail accounts simultaneously for unread messages. All results are passed into a single JavaScript Code step that merges them, tags each email with its inbox label, skips duplicates, detects OTP patterns, formats a WhatsApp message, and sends it via Green API. Finally the updated ID list is written back to Storage so the next run knows what has already been sent.
