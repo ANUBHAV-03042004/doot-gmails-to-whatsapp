@@ -166,7 +166,7 @@ MIT — use it, fork it, build on it.
 
 ---
 
-*Built with 💕 by Anubhav Kumar Srivastava*
+*Built with ❤️ by Anubhav Kumar Srivastava*
 
 <p align="center">
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHZvbDd2Nm41OGY4MXdlODg3OHB3czk0Mnl1Y2NsemFrZDZ4c3A0ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1oJKxy0ypYpQbK4b5n/giphy.gif" alt="Doot footer" width="50%"/>
